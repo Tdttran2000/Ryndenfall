@@ -10,6 +10,10 @@ Ryndenfall takes place in the world of Veraxia, a fantasy-styled world full of m
 In Ryndenfall, the user will be able to create their very own character. They can choose which nation they hail from, which will affect their class, their stats, their weapon choice, as well as how citizens of certain nations will interact with them. Ryndenfall is very story-driven, which will carry dialogue and will allow the user to choose certain dialogue/interaction options when progressing through the game. Combat will be turn based and the actions the user can take will differ depending on their weapons and classes.
 
 
+## Required Downloads for Setup and Testing
+* Python https://www.python.org/downloads/
+* VSCode (Optional)
+
 ## Contributing Guidelines
 * The programming language for this game will be python. 
 * Code should be well organized.
