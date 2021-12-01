@@ -11,6 +11,7 @@ This file contains the character creator which starts off the game.
 """
 
 import string 
+import csv
 
 class PlayerCharacter:
     #Initialization for Player's Character with their attributes.
@@ -142,6 +143,14 @@ def main():
     player = characterCreator()
 
     player.displayInfo()
+    
+    with open('character_log.csv', 'w', newline='') as csvfile:
+        characterFields = ['name', 'gender', 'nation', 'order', 'lvl', 'attack', 'mana', 'hp', 'defense', 'agility']
+        writer = csv.DictWriter(csvfile, fieldnames=characterFields)
+        
+        writer.writeheader()
+        writer.writerow({'name': player.name, 'gender':player.gender, 'nation':player.nation, 'order': player.order, 'lvl':player.lvl, 'attack': player.attack, 'mana': player.mana, 'hp': player.hp, 'defense': player.defense, 'agility': player.agility})
 
 if __name__ == '__main__':
     main()
+    
